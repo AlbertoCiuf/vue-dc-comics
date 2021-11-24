@@ -3,6 +3,7 @@
    <Header />
    <Main />
    <Merchandise />
+   <Footer />
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Header from "./components/Header.vue"
 import Main from "./components/Main.vue"
 import Merchandise from "./components/Merchandise.vue"
+import Footer from "./components/Footer.vue"
 
 export default {
   name: 'App',
   components: {
     Header,
     Main,
-    Merchandise
+    Merchandise,
+    Footer
   },
  
 }
@@ -25,5 +28,4 @@ export default {
 
 <style lang="scss">
   @import "./assets/style/generals.scss";
-
 </style>

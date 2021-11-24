@@ -6,7 +6,8 @@
       </a>
       <nav>
         <ul>
-          <li v-for="(item, index) in topNavLinks" :key="`topNav${index}`"
+          <li 
+          v-for="(item, index) in topNavLinks" :key="`topNav${index}`"
           :class="{active : item.isActive}">
             <a :href="item.url">{{item.text}}</a>
           </li>
@@ -82,7 +83,6 @@ export default {
 <style lang="scss" scoped>
   header {
     height: 120px;
-    padding-bottom: 3px;
     
     .container {
       height: 100%;
@@ -100,7 +100,7 @@ export default {
       li {
         padding: 0 15px;
         a {
-          line-height: 120px;
+          line-height: 117px;
           text-transform: uppercase;
           color: #454545;
           font-weight: 700;
