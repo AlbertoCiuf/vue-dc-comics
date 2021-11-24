@@ -82,7 +82,7 @@ export default {
 <style lang="scss" scoped>
   header {
     height: 120px;
-    // background-color: teal;
+    padding-bottom: 3px;
     
     .container {
       height: 100%;
@@ -102,7 +102,6 @@ export default {
         a {
           line-height: 120px;
           text-transform: uppercase;
-          text-decoration: none;
           color: #454545;
           font-weight: 700;
        }
