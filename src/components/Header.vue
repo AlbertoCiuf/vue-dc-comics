@@ -6,16 +6,11 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#">characters</a></li>
-          <li class="active"><a href="#">comics</a></li>
-          <li><a href="#">movies</a></li>
-          <li><a href="#">tv</a></li>
-          <li><a href="#">games</a></li>
-          <li><a href="#">collectibles</a></li>
-          <li><a href="#">videos</a></li>
-          <li><a href="#">fans</a></li>
-          <li><a href="#">news</a></li>
-          <li><a href="#">shop</a></li>
+          <li v-for="(item, index) in topNavLinks" :key="`topNav${index}`"
+          :class="{active : item.isActive}">
+            <a :href="item.url">{{item.text}}</a>
+          </li>
+          
         </ul>
       </nav>
     </div>
@@ -29,8 +24,55 @@ export default {
     return{
       topNavLinks: [
         {
-          
-        }
+          url:'#',
+          text:'characters',
+          isActive: false
+        },
+        {
+          url:'#',
+          text:'comics',
+          isActive: true
+        },
+        {
+          url:'#',
+          text:'movies',
+          isActive: false
+        },
+        {
+          url:'#',
+          text:'tv',
+          isActive: false
+        },
+        {
+          url:'#',
+          text:'games',
+          isActive: false
+        },
+        {
+          url:'#',
+          text:'collectibles',
+          isActive: false
+        },
+        {
+          url:'#',
+          text:'videos',
+          isActive: false
+        },
+        {
+          url:'#',
+          text:'fans',
+          isActive: false
+        },
+        {
+          url:'#',
+          text:'news',
+          isActive: false
+        },
+        {
+          url:'#',
+          text:'shop',
+          isActive: false
+        },
       ]
     }
   }
@@ -58,21 +100,19 @@ export default {
       li {
         padding: 0 15px;
         a {
-          line-height: 100%;
+          line-height: 120px;
           text-transform: uppercase;
           text-decoration: none;
-          color: black;
+          color: #454545;
           font-weight: 700;
        }
-          
-            
-          
-      li:hover a, li.active a {
-        color: #2582FA;
-        border-bottom: 2px solid #2582FA;
-
-       }
     }
+      li.active a, li:hover a{
+      color: #2582FA;
+     }
+      li.active, li:hover {
+        border-bottom: 3px solid #2582FA;
+     }
 
   }
  }
