@@ -104,17 +104,17 @@ export default {
           text-transform: uppercase;
           color: #454545;
           font-weight: 700;
-       }
-    }
+        }
+      }
       li.active a, li:hover a{
       color: #2582FA;
-     }
+      }
       li.active, li:hover {
         border-bottom: 3px solid #2582FA;
-     }
+      }
 
+    }
   }
- }
 
 </style>
 

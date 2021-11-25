@@ -40,7 +40,7 @@ export default {
     background-color: #2582FA;
     color: #fff;
     .container {
-      width: 80%;
+      width: 70%;
       margin: 0 auto;
       ul {
         height: 160px;
